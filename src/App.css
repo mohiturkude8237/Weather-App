@@ -1,0 +1,32 @@
+.weather-container
+{
+  max-width:400px;
+  margin:20px auto;
+  padding:20px;
+  background-color:#0672C2;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+.city
+{
+  width:100%;
+  margin:10px;
+  height:30px;
+  outline:none;
+  border-radius:10px;
+  border:1px solid #0672C2;
+}
+.btn
+{
+  padding:10px;
+  cursor: pointer;
+  border-radius:10px;
+  background-color: rgb(228, 228, 18);
+  font-weight:bold;
+}
+p,h3
+{
+  color:#fff;
+  font-size:20px;
+}
