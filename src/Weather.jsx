@@ -35,7 +35,7 @@ function Weather() {
       <input
         className="city"
         type='text'
-        placeholder='Enter City Name'
+        placeholder='Enter ur City Name'
         value={city}
         onChange={handleCityChange}
       />
