@@ -39,7 +39,7 @@ function Weather() {
         value={city}
         onChange={handleCityChange}
       />
-      <button className='btn' onClick={handleClick}>Get Weather</button>
+      <button className='btn' onClick={handleClick}>Get Weather 1</button>
       {weather && <>
         <div className='weather-info'>
           <h3>{weather.data.name}</h3>
