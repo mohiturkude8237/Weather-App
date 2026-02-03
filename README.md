@@ -20,6 +20,8 @@ cd Weather-App
 npm install
 npm run dev -- --host 0.0.0.0 --port 5173
 
+```
+
 ### Production with Docker
 
 ```bash
@@ -27,7 +29,8 @@ docker build -t weather-app-prod .
 docker run -d -p 80:80 weather-app-prod
 
 Or use Docker Compose:
-docker compose up -d --build
+docker compose up -d --build'
+```
 
 ## CI/CD Pipeline
 
@@ -38,13 +41,14 @@ This Jenkins pipeline automates:
 3. Deploy container via Docker Compose
 4. Run smoke test to verify app
 
+```groovy
 pipeline {
   stages {
     stage('Build') { sh 'docker build -t weather-app-prod .' }
     stage('Deploy') { sh 'docker compose up -d' }
   }
 }
-
+```
 ## Screenshots
 
 ![Weather App Screenshot](./weather.png)
