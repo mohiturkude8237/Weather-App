@@ -54,4 +54,4 @@ pipeline {
 
 ## Screenshots
 
-![Weather App Screenshot](oop.png)
+![Weather App Screenshot](./weather.png)
