@@ -20,13 +20,6 @@ cd Weather-App
 npm install
 npm run dev -- --host 0.0.0.0 --port 5173
 
-
-### Production with Docker
-
-```bash
-docker build -t weather-app-prod .
-docker run -d -p 80:80 weather-app-prod
-
 ### Production with Docker
 
 ```bash
