@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   weather-app:
-    image: chetanurkude27/weather-app-prod:latest
+    image: mohiturkude8237/weather-app-prod:latest
     container_name: weather-app
     restart: always
     ports:
