@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Weather.css'; // Assuming you create a separate CSS file for styles
@@ -44,6 +43,14 @@ function Weather() {
     fetchWeather();
   };
 
+  // Function to determine the weather class based on the weather description
+  const getWeatherClass = (description) => {
+    if (description.includes('clear')) return 'sunny';
+    if (description.includes('cloud')) return 'cloudy';
+    if (description.includes('rain')) return 'rainy';
+    return '';
+  };
+
   return (
     <div className="weather-container">
       <h1 className="weather-header">Weather App</h1>
@@ -65,7 +72,7 @@ function Weather() {
       {error && <div className="error">{error}</div>}
 
       {weather && (
-        <div className="weather-info">
+        <div className={`weather-info ${getWeatherClass(weather.weather[0].description)}`}>
           <h3>{weather.name}</h3>
           <img
             src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
@@ -80,5 +87,3 @@ function Weather() {
 }
 
 export default Weather;
-
-
