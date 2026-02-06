@@ -1,4 +1,4 @@
-  # Weather App – CI/CD Deployment1
+  # Weather App – CI/CD Deployment
 
 A React Weather Application deployed using Docker, Nginx, and Jenkins CI/CD for production-grade deployment.
 
