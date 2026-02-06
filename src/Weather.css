@@ -1,0 +1,108 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.weather-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.weather-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3e6a7b;
+}
+
+/* Input and Button Styles */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.city-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 70%;
+  transition: all 0.3s;
+}
+
+.city-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.fetch-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s;
+}
+
+.fetch-button:hover {
+  background-color: #0056b3;
+}
+
+/* Weather Info Styling */
+.weather-info {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e6f7ff;
+}
+
+.weather-info img {
+  width: 50px;
+  height: 50px;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Loading and Error States */
+.loading {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.error {
+  font-size: 18px;
+  color: #ff4747;
+}
