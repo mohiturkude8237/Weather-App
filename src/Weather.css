@@ -7,12 +7,13 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f4f8; /* Light background for a clean feel */
+  background-color: #3498db; /* Blue background for the page */
   color: #333;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align to the top */
   min-height: 100vh;
+  padding-top: 50px; /* Add some padding from top */
 }
 
 .weather-container {
@@ -23,6 +24,7 @@ body {
   width: 100%;
   max-width: 400px;
   text-align: center;
+  position: relative; /* Ensure it's centered on the screen */
 }
 
 .weather-header {
@@ -57,7 +59,7 @@ body {
 
 .fetch-button {
   padding: 10px 20px;
-  background-color: #4e84c0;
+  background-color: #f1c40f; /* Yellow button */
   color: white;
   border: none;
   border-radius: 5px;
@@ -67,7 +69,7 @@ body {
 }
 
 .fetch-button:hover {
-  background-color: #3a6b9f;
+  background-color: #f39c12; /* Darker yellow when hovered */
 }
 
 .loading {
@@ -83,6 +85,10 @@ body {
 
 .weather-info {
   margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .weather-info h3 {
@@ -107,6 +113,24 @@ body {
 .description {
   font-size: 1.2rem;
   color: #555;
+}
+
+.sunny {
+  background-image: url('https://path-to-your-sunny-image.jpg'); /* Sunny weather image */
+  background-size: cover;
+  background-position: center;
+}
+
+.cloudy {
+  background-image: url('https://path-to-your-cloudy-image.jpg'); /* Cloudy weather image */
+  background-size: cover;
+  background-position: center;
+}
+
+.rainy {
+  background-image: url('https://path-to-your-rainy-image.jpg'); /* Rainy weather image */
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 480px) {
